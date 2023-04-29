@@ -24,7 +24,7 @@ print("Frames are {}".format(fps))
 
 if(opned):
     #Run until it remains open
-    while(cap.isOpend()):
+    while(cap.isOpened()):
         #Get the frame from Video Capture Instance
         ret, frame = cap.read()
         #return ret variable tells if the frame is returned successfully
