@@ -6,7 +6,7 @@ image = cv2.imread("sample.jpg")
 height, width= image.shape[:2]
 
 #translation matrix 
-matrix = cv2.getRotationMatrix2D((width/2,height/2),20,2)
+matrix = cv2.getRotationMatrix2D((width/2,height/2),40,1)
 
 #applying the matrix to the image
 translated = cv2.warpAffine(image,matrix,(width,height))
